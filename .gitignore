@@ -1,0 +1,27 @@
+# Game disk image (large, distribute separately)
+HardDisk.img
+
+# 86Box emulator (downloaded automatically by start scripts)
+86Box.app/
+86Box.AppImage
+
+# Windows-specific files
+*.exe
+*.dll
+
+# BIOS ROM files (copyrighted, from original distribution)
+roms/
+
+# BIOS NVRAM (hardware-specific, regenerated on first boot)
+nvr/tx97.bin
+
+# 86Box internal state
+*.backup
+.patched_hidpi
+
+# macOS metadata
+.DS_Store
+.setup_done
+
+# Claude project memory
+.claude/
