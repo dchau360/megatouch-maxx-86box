@@ -1,4 +1,6 @@
 #!/bin/bash
+# NOTE: This script is untested on Linux. It may work but could need adjustments.
+# Please report issues or submit a PR at https://github.com/dchau360/megatouch-maxx-86box
 set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 

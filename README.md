@@ -55,6 +55,8 @@ The script will:
 
 ## Running on Linux
 
+> **Untested** — this script has not been verified on a real Linux system. It may work but could need adjustments. Reports and PRs welcome.
+
 ```bash
 chmod +x start_linux.sh
 ./start_linux.sh
