@@ -1,6 +1,8 @@
-# Megatouch Maxx — Mac & Linux Launcher
+# Megatouch Maxx (Vic_VP Mod) — Mac & Linux Launcher
 
-Run a Megatouch Maxx arcade touchscreen game on macOS and Linux using [86Box](https://86box.net/) PC emulation.
+Run the **Vic_VP modded Megatouch Maxx** arcade touchscreen game on macOS and Linux using [86Box](https://86box.net/) PC emulation.
+
+This repo contains only the launcher scripts and machine config. The game disk image, BIOS ROMs, and emulator binary are **not included** and must be obtained from the Vic_VP Megatouch Maxx distribution separately.
 
 ## What's in this repo
 
@@ -11,28 +13,28 @@ Run a Megatouch Maxx arcade touchscreen game on macOS and Linux using [86Box](ht
 | `86box.cfg` | 86Box machine configuration (Pentium 166, S3 Trio64, 3M MicroTouch) |
 | `nvr/tx97.nvr` | CMOS settings for the emulated ASUS TX97 motherboard |
 
-## Requirements
+## Required files (not included)
 
-You need these files from the original Megatouch Maxx distribution (not included here):
+These files come from the **Vic_VP Megatouch Maxx distribution** and must be placed in the same directory as the scripts:
 
-```
-HardDisk.img      — the game disk image (~3.7 GB)
-roms/             — 86Box BIOS ROM files
-nvr/tx97.bin      — ASUS TX97 BIOS ROM
-```
+| File | Size | Description |
+|------|------|-------------|
+| `HardDisk.img` | ~3.7 GB | Game disk image — the Vic_VP modded Megatouch Maxx |
+| `roms/` | ~7 MB | 86Box BIOS ROM files for the emulated hardware |
+| `nvr/tx97.bin` | ~120 KB | ASUS TX97 motherboard BIOS ROM |
 
-Place them alongside the scripts so the directory looks like:
+Once you have those, the directory should look like:
 
 ```
 megatouch-maxx/
   start_mac.sh
   start_linux.sh
   86box.cfg
-  HardDisk.img
+  HardDisk.img        ← from Vic_VP distribution
   nvr/
-    tx97.bin
-    tx97.nvr
-  roms/
+    tx97.bin          ← from Vic_VP distribution
+    tx97.nvr          ← included in this repo
+  roms/               ← from Vic_VP distribution
     ...
 ```
 
